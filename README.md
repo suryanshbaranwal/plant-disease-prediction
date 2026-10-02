@@ -2,32 +2,30 @@
 
 An AI-powered plant disease prediction system that uses deep learning and transfer learning to identify plant diseases from leaf images.
 
-The project uses a pretrained EfficientNetB4 model with fine-tuning to classify leaf images into 39 different plant disease and healthy categories.
+The project uses a pretrained **EfficientNetB4** model with fine-tuning to classify plant leaf images into **39 disease and healthy categories**.
 
----
+## 🚀 Live Demo
+
+👉 https://suryansh-plant-disease-prediction.streamlit.app/
 
 ## 📌 Project Overview
 
 Plant diseases can significantly affect crop productivity and agricultural production. This project aims to automate plant disease identification using image classification techniques.
 
-A leaf image is provided as input to the trained deep learning model, which predicts the corresponding disease or healthy category.
+Users can upload a plant leaf image, and the trained deep learning model predicts the corresponding disease or healthy category along with confidence scores.
 
-The model is trained using a large plant leaf image dataset and achieves **98.36% test accuracy**.
+The model is trained on a large plant leaf image dataset and uses transfer learning with EfficientNetB4 for image classification.
 
----
-
-## 🚀 Features
+## ✨ Features
 
 - 🌱 Plant disease classification from leaf images
 - 🧠 Transfer learning using EfficientNetB4
-- 🔍 Classification across 39 different classes
+- 🏷️ Classification across 39 categories
 - 🖼️ Image preprocessing and resizing
-- 📊 Training and validation performance visualization
-- 🔧 Fine-tuning of the pretrained model
-- 🎯 Top-5 prediction confidence scores
-- 🖥️ Gradio-based prediction interface
-
----
+- 📊 Top-5 prediction confidence scores
+- 🔍 Fine-tuned deep learning model
+- 🌐 Interactive Streamlit web application
+- ⚡ Real-time prediction from uploaded images
 
 ## 🛠️ Technologies Used
 
@@ -36,17 +34,15 @@ The model is trained using a large plant leaf image dataset and achieves **98.36
 - Keras
 - NumPy
 - Matplotlib
+- Pillow
 - Split-Folders
-- Gradio
-- PIL (Python Imaging Library)
-
----
+- Streamlit
+- Git & GitHub
+- Git LFS
 
 ## 🧠 Model Architecture
 
-The project uses **EfficientNetB4**, pretrained on ImageNet, as the feature extraction backbone.
-
-The architecture consists of:
+The project uses **EfficientNetB4** as the feature extraction backbone with a custom classification layer.
 
 ```text
 Input Image
