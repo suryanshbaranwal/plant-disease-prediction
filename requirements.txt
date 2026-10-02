@@ -4,3 +4,4 @@ matplotlib
 split-folders
 gradio
 pillow
+streamlit
