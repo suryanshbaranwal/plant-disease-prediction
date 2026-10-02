@@ -44,6 +44,18 @@ The model is trained on a large plant leaf image dataset and uses transfer learn
 - Git & GitHub
 - Git LFS
 
+## 📈 Model Performance
+
+The trained model achieved approximately 98.36% test accuracy during evaluation.
+
+The application also displays the Top-5 predictions with confidence scores to provide additional prediction information.
+
+## 🌐 Deployment
+
+The application is deployed using Streamlit Community Cloud.
+
+The trained model is stored using Git LFS because of its large file size.
+
 ## 🧠 Model Architecture
 
 The project uses **EfficientNetB4** as the feature extraction backbone with a custom classification layer.
@@ -64,91 +76,3 @@ Dense Layer
 Softmax
      ↓
 39 Classes
-
-📊 Dataset
-
-The dataset contains plant leaf images belonging to 39 different categories, including healthy and diseased plants.
-
-The categories cover multiple crops such as:
-
-🍎 Apple
-🫐 Blueberry
-🍒 Cherry
-🌽 Corn
-🍇 Grape
-🍊 Orange
-🍑 Peach
-🌶️ Pepper
-🥔 Potato
-Raspberry
-Squash
-🍓 Strawberry
-🍅 Tomato
-🔬 Prediction Workflow
-Upload Leaf Image
-        ↓
-Image Preprocessing
-        ↓
-Resize to 160 × 160
-        ↓
-Deep Learning Model
-        ↓
-Disease Classification
-        ↓
-Prediction + Confidence Score
-📈 Model Performance
-
-The trained model achieved approximately 98.36% test accuracy during evaluation.
-
-The application also displays the Top-5 predictions with confidence scores to provide additional prediction information.
-
-💻 Run Locally
-1. Clone the repository
-git clone https://github.com/suryanshbaranwal/plant-disease-prediction.git
-cd plant-disease-prediction
-2. Install dependencies
-pip install -r requirements.txt
-3. Run the Streamlit application
-streamlit run streamlit_app.py
-
-The application will open in your browser.
-
-📁 Project Structure
-plant-disease-prediction/
-│
-├── app.py
-├── streamlit_app.py
-├── class_names.json
-├── plant_disease_cnn_model.keras
-├── plant_disease_prediction.ipynb
-├── requirements.txt
-├── README.md
-├── .gitattributes
-└── plant-disease-demo.png.png
-🌐 Deployment
-
-The application is deployed using Streamlit Community Cloud.
-
-The trained model is stored using Git LFS because of its large file size.
-
-Live Application
-
-👉 https://suryansh-plant-disease-prediction.streamlit.app/
-
-🔮 Future Improvements
-📱 Develop a mobile-friendly version
-🌿 Add more plant disease categories
-💊 Provide disease treatment and prevention suggestions
-📷 Support real-time camera-based leaf detection
-📊 Add detailed disease information
-🤖 Improve model accuracy with additional datasets
-👨‍💻 Author
-Suryansh Baranwal
-
-Computer Science & Engineering student specializing in Artificial Intelligence and Machine Learning.
-
-🔗 GitHub:
-https://github.com/suryanshbaranwal
-
-🔗 Project Repository:
-https://github.com/suryanshbaranwal/plant-disease-prediction
