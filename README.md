@@ -8,6 +8,10 @@ The project uses a pretrained **EfficientNetB4** model with fine-tuning to class
 
 👉 https://suryansh-plant-disease-prediction.streamlit.app/
 
+## 🖥️ Live App Preview
+
+![Plant Disease Prediction App](./plant-disease-demo.png.png)
+
 ## 📌 Project Overview
 
 Plant diseases can significantly affect crop productivity and agricultural production. This project aims to automate plant disease identification using image classification techniques.
